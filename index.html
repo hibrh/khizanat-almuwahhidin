@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>خزانة الموحدين</title>
+<meta name="description" content="فهرس خمس مخطوطات مغربية وأندلسية من العهد الموحدي">
+<meta property="og:type" content="website">
+<meta property="og:title" content="خزانة الموحدين">
+<meta property="og:description" content="فهرس خمس مخطوطات مغربية وأندلسية من العهد الموحدي">
+<meta property="og:url" content="https://hibrh.github.io/khizanat-almuwahhidin/">
+<meta property="og:image" content="https://hibrh.github.io/khizanat-almuwahhidin/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%2256%22%20height%3D%2256%22%20fill%3D%22%23191311%22%20stroke%3D%22%23C4923A%22%20stroke-width%3D%224%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2216%22%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22none%22%20stroke%3D%22%23C4923A%22%20stroke-width%3D%223%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;600;700&family=Markazi+Text:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+:root{
+  /* Layout: a catalogue raisonné set right to left. A to-scale ruler of the Almohad reigns, a specimen strip of the five scripts, then one "folio" per manuscript: the ruled catalogue card beside the leaf itself. */
+  --paper:#F5EEEA;      /* ground: a faint rose, after the dyed paper of the Pink Qur'an */
+  --leaf:#FCF8F5;       /* raised leaf: figures, the caliph note */
+  --ink:#2B1D19;        /* iron-gall ink */
+  --ink-2:#67514A;      /* faded ink */
+  --rule:#E0D1C9;       /* mistara ruling */
+  --gold:#85580F;       /* gold for display type, contrast-safe */
+  --gold-leaf:#C4923A;  /* gold for ornament only */
+  --lapis:#1D4A8C;      /* the blue of shadda and sukun: links and controls */
+  --vermilion:#AE3A2B;  /* the red of the vowels: numbers and markers */
+  --wasla:#2E7553;
+  --hamza:#D2A12A;
+  --band-a:#EADBD3;
+  --band-b:#DECABF;
+  --f-display:"Reem Kufi","Noto Kufi Arabic","Segoe UI",Tahoma,sans-serif;
+  --f-body:"Markazi Text","Amiri","Noto Naskh Arabic","Traditional Arabic","Times New Roman",serif;
+  --f-ui:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;
+  --s-1:.8125rem; --s0:.9375rem; --s1:1.3rem; --s2:1.55rem; --s3:2.1rem; --s4:clamp(2.6rem,6.4vw,4.4rem);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#191311; --leaf:#221A17; --ink:#F0E6E0; --ink-2:#BCA79F; --rule:#3B2E2A;
+    --gold:#DDB262; --gold-leaf:#B98A3C; --lapis:#97B9F3; --vermilion:#E8826F; --wasla:#6CC39A; --hamza:#E8C35B;
+    --band-a:#2B211E; --band-b:#382B27;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#191311; --leaf:#221A17; --ink:#F0E6E0; --ink-2:#BCA79F; --rule:#3B2E2A;
+  --gold:#DDB262; --gold-leaf:#B98A3C; --lapis:#97B9F3; --vermilion:#E8826F; --wasla:#6CC39A; --hamza:#E8C35B;
+  --band-a:#2B211E; --band-b:#382B27;
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--s1);line-height:1.8;margin:0}
+.page{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,48px);padding-block:clamp(28px,5vw,64px) 56px;display:grid;gap:clamp(48px,7vw,88px)}
+a{color:var(--lapis);text-decoration-thickness:1px;text-underline-offset:.25em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--lapis);outline-offset:3px;border-radius:2px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+.ui{font-family:var(--f-ui)}
+.num{font-variant-numeric:tabular-nums}
+
+/* Masthead */
+.mast{display:grid;gap:28px}
+.eyebrow{font-family:var(--f-ui);font-size:var(--s0);color:var(--ink-2)}
+.mast h1{font-family:var(--f-display);font-weight:600;font-size:var(--s4);line-height:1.15;color:var(--gold)}
+.lede{max-width:62ch;font-size:calc(var(--s1) * 1.08)}
+.mast .src{font-family:var(--f-ui);font-size:var(--s-1);color:var(--ink-2);max-width:80ch;line-height:1.7}
+.toc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.toc a{display:grid;gap:8px;color:inherit;text-decoration:none}
+.toc .thumb{aspect-ratio:3/4;overflow:hidden;background:var(--leaf);border:1px solid var(--rule)}
+.toc .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.toc a:hover .thumb img{transform:scale(1.04)}
+.toc .t-no{font-family:var(--f-ui);font-size:var(--s-1);color:var(--vermilion)}
+.toc .t-title{font-family:var(--f-ui);font-size:var(--s0);font-weight:600;line-height:1.5}
+.toc .t-date{font-family:var(--f-ui);font-size:var(--s-1);color:var(--ink-2)}
+@media (max-width:820px){
+  .toc{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:150px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
+  .toc li{scroll-snap-align:start}
+}
+
+/* Section heads */
+.sec-head{display:grid;gap:10px;margin-bottom:28px;max-width:70ch}
+.sec-head h2{font-family:var(--f-display);font-weight:600;font-size:var(--s3);color:var(--gold);line-height:1.3}
+.sec-head p{color:var(--ink-2)}
+
+/* Ruler of reigns */
+.ruler-wrap{overflow-x:auto;border-block:1px solid var(--rule);padding-block:8px}
+.ruler{position:relative;min-width:780px;height:344px;font-family:var(--f-ui)}
+.band{position:absolute;right:var(--r);width:var(--w);top:58px;height:28px;background:var(--band-a);border-inline-start:1px solid var(--paper)}
+.band:nth-child(even){background:var(--band-b)}
+.band.pre{background:repeating-linear-gradient(135deg,var(--band-a) 0 6px,var(--paper) 6px 10px)}
+.rn{position:absolute;right:50%;transform:translateX(50%);white-space:nowrap;font-size:var(--s-1);line-height:1.3;color:var(--ink);background:var(--paper);padding-inline:4px;z-index:2}
+.rn.up{top:-24px}
+.rn.down{top:34px;color:var(--ink-2)}
+.rn.edge-l{right:auto;left:0;transform:none}
+.lead{position:absolute;right:var(--x);top:86px;height:var(--h,40px);border-inline-start:1px dashed var(--gold-leaf);z-index:1}
+.mk{position:absolute;right:var(--x);top:126px;transform:translateX(50%);display:grid;justify-items:center;gap:4px;z-index:3}
+.sq{width:24px;height:24px;display:grid;place-items:center;font-size:var(--s-1);font-weight:600;color:var(--paper);background:var(--vermilion);outline:1px solid var(--vermilion);outline-offset:2px}
+.mk .d{font-size:var(--s-1);color:var(--ink-2);white-space:nowrap;background:var(--paper);padding-inline:3px}
+.rg{position:absolute;right:var(--r);width:var(--w);top:var(--y);height:8px;background:linear-gradient(to left,var(--vermilion),color-mix(in srgb,var(--vermilion) 25%,transparent))}
+.rg .sq{position:absolute;right:-12px;top:-8px}
+.rg .d{position:absolute;right:20px;top:12px;font-size:var(--s-1);color:var(--ink-2);white-space:nowrap}
+.endow{position:absolute;right:var(--x);top:var(--y);transform:translateX(50%);display:grid;justify-items:center;gap:2px}
+.endow i{width:11px;height:11px;background:var(--gold-leaf);transform:rotate(45deg)}
+.endow span{font-size:var(--s-1);color:var(--ink-2);white-space:nowrap}
+.axis{position:absolute;right:0;left:0;top:290px;border-top:1px solid var(--ink-2)}
+.tk{position:absolute;right:var(--x);top:290px;transform:translateX(50%);display:grid;justify-items:center;font-size:var(--s-1);color:var(--ink-2);line-height:1.35}
+.tk::before{content:"";width:1px;height:7px;background:var(--ink-2);margin-bottom:3px}
+.tk b{font-weight:500;color:var(--ink)}
+.legend{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:10px;font-family:var(--f-ui);font-size:var(--s0)}
+.legend li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline}
+.legend .sq{width:22px;height:22px}
+.legend span.meta{color:var(--ink-2)}
+
+/* Specimen strip */
+.specs{display:grid;gap:0;border-top:1px solid var(--rule)}
+.spec{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:clamp(16px,3vw,40px);align-items:center;padding-block:18px;border-bottom:1px solid var(--rule)}
+.spec h3{font-family:var(--f-display);font-weight:500;font-size:var(--s2);color:var(--gold);line-height:1.35}
+.spec p{font-family:var(--f-ui);font-size:var(--s0);color:var(--ink-2);line-height:1.7;margin-top:6px}
+.spec a.img{display:block;background:var(--leaf);border:1px solid var(--rule)}
+.spec a.img img{width:100%;max-height:180px;object-fit:cover;object-position:center}
+@media (max-width:640px){.spec{grid-template-columns:1fr}}
+
+/* Catalogue entries */
+.cat{display:grid;gap:clamp(64px,9vw,112px)}
+.ms{display:grid;gap:28px;padding-top:28px;border-top:2px solid var(--gold-leaf)}
+.ms-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:start}
+.ms-no{font-family:var(--f-ui);font-size:var(--s0);color:var(--vermilion)}
+.ms h2{font-family:var(--f-display);font-weight:600;font-size:var(--s3);line-height:1.3;color:var(--gold);margin-top:6px}
+.ms-sub{color:var(--ink-2);margin-top:6px;max-width:60ch}
+.stamp{width:7.25rem;aspect-ratio:1;display:grid;place-content:center;gap:2px;text-align:center;border:2px solid var(--gold-leaf);outline:1px solid var(--gold-leaf);outline-offset:4px;margin:6px}
+.stamp b{font-family:var(--f-display);font-weight:600;font-size:1.6rem;line-height:1.1;color:var(--gold)}
+.stamp span{font-family:var(--f-ui);font-size:var(--s-1);color:var(--ink-2)}
+.ms-body{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(24px,4vw,56px);align-items:start}
+@media (max-width:880px){.ms-body{grid-template-columns:1fr}.ms-fig{order:-1}.ms-head{grid-template-columns:1fr}.stamp{width:6rem}}
+.ms-text{display:grid;gap:22px;min-width:0}
+.card{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);border-top:1px solid var(--ink-2);font-family:var(--f-ui);font-size:var(--s0);line-height:1.6}
+.card dt,.card dd{margin:0;padding:8px 0;border-bottom:1px solid var(--rule)}
+.card dt{color:var(--ink-2);padding-inline-end:20px;white-space:nowrap}
+.card dd{font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.card bdi{font-family:var(--f-ui)}
+.blk h3{font-family:var(--f-ui);font-size:var(--s0);font-weight:600;color:var(--vermilion);margin-bottom:4px}
+.blk p{max-width:65ch}
+.blk p + p{margin-top:10px}
+.caliph{background:var(--leaf);border:1px solid var(--rule);border-inline-start:3px double var(--gold-leaf);padding:20px 22px;display:grid;gap:8px}
+.caliph .k{font-family:var(--f-ui);font-size:var(--s-1);color:var(--ink-2)}
+.caliph .name{font-family:var(--f-display);font-weight:500;font-size:var(--s2);color:var(--gold);line-height:1.35}
+.caliph .reign{font-family:var(--f-ui);font-size:var(--s0);color:var(--ink-2)}
+.go{display:flex;flex-wrap:wrap;gap:10px 18px;font-family:var(--f-ui);font-size:var(--s0)}
+.go a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid var(--lapis);text-decoration:none;font-weight:500}
+.go a:hover{background:color-mix(in srgb,var(--lapis) 10%,transparent)}
+.go .path{font-family:var(--f-ui);font-size:var(--s-1);color:var(--ink-2);align-self:center;direction:ltr;unicode-bidi:isolate}
+.ms-fig{margin:0;display:grid;gap:12px}
+.ms-fig a{display:block;background:var(--leaf);border:1px solid var(--rule);padding:10px}
+.ms-fig figcaption{font-family:var(--f-ui);font-size:var(--s-1);color:var(--ink-2);line-height:1.6}
+.ms-fig .pair{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.dots{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--f-ui);font-size:var(--s-1);color:var(--ink-2);list-style:none;margin:6px 0 0;padding:0}
+.dots i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-inline-end:6px;vertical-align:middle}
+
+/* Footer */
+.foot{border-top:1px solid var(--rule);padding-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:28px 48px;font-family:var(--f-ui);font-size:var(--s0);line-height:1.75}
+.foot h2{font-family:var(--f-display);font-weight:500;font-size:var(--s2);color:var(--gold);margin-bottom:8px}
+.foot ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.foot .ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.foot p + p{margin-top:8px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="page" dir="rtl" lang="ar">
+
+<header class="mast">
+  <p class="eyebrow">فهرس مخطوطات · العهد الموحدي <span class="num">515–668هـ / 1121–1269م</span></p>
+  <h1>خزانة الموحدين</h1>
+  <p class="lede">خمس مخطوطات من المغرب والأندلس نُسخت في ظل دولة الموحدين، اخترناها لتنوّع خطوطها ولجودة نسخها الرقمية: كتاب مؤسس الدولة بطرّته المذهّبة، ونسختان بخط عالمين من إشبيلية، والمخطوط المصوَّر الوحيد الباقي من الأندلس، ومصحف مراكشي على ورق وردي. لكل مخطوط بطاقة تعرّف به وبمؤلفه وتاريخه وأهميته، وبالخليفة الذي كُتب في عهده.</p>
+  <ol class="toc" aria-label="المخطوطات الخمس">
+    <li><a href="#m1"><span class="thumb"><img src="assets/m1_cover.jpg" alt="صفحة عنوان كتاب سيبويه بخط ابن خروف"></span><span class="t-no">1</span><span class="t-title">كتاب سيبويه بخط ابن خروف</span><span class="t-date num">إشبيلية · 562هـ</span></a></li>
+    <li><a href="#m2"><span class="thumb"><img src="assets/m2_cover.jpg" alt="العنوان المذهب لكتاب ابن تومرت"></span><span class="t-no">2</span><span class="t-title">كتاب ابن تومرت «أعز ما يُطلب»</span><span class="t-date num">579هـ</span></a></li>
+    <li><a href="#m3"><span class="thumb"><img src="assets/m3_cover.jpg" alt="صورة مجلس الغناء في البستان من حديث بياض ورياض"></span><span class="t-no">3</span><span class="t-title">حديث بياض ورياض</span><span class="t-date num">الأندلس · أوائل ق 7هـ</span></a></li>
+    <li><a href="#m4"><span class="thumb"><img src="assets/m4_cover.jpg" alt="صفحة من شرح المقدمة الجزولية للشلوبين"></span><span class="t-no">4</span><span class="t-title">شرح الجزولية للشلوبين</span><span class="t-date num">إشبيلية · 622هـ</span></a></li>
+    <li><a href="#m5"><span class="thumb"><img src="assets/m5_cover.jpg" alt="ورقة من المصحف الوردي فيها عنوان سورة النور"></span><span class="t-no">5</span><span class="t-title">المصحف الوردي</span><span class="t-date num">مراكش · ق 7هـ</span></a></li>
+  </ol>
+  <p class="src">المصادر: المكتبة الوطنية الفرنسية (Gallica) · مكتبة الفاتيكان الرسولية · مكتبة دير الإسكوريال الملكية · متحف المتروبوليتان بنيويورك · متحف غيتي بلوس أنجلوس. صُغّرت الصور هنا للعرض، وتُفتح النسخ الكاملة بالنقر عليها في مكتباتها الأصلية.</p>
+</header>
+
+<section aria-labelledby="h-time">
+  <div class="sec-head">
+    <h2 id="h-time">الخلفاء والمخطوطات على مسطرة واحدة</h2>
+    <p>رُسمت المدد بمقياس واحد من 1120 إلى 1270م، ويقرأ الخط من اليمين. المربعات المرقّمة تواريخ نسخ معروفة، والأشرطة مدد تقديرية حين يؤرَّخ المخطوط بأسلوبه.</p>
+  </div>
+  <div class="ruler-wrap">
+    <div class="ruler" role="img" aria-label="خط زمني للخلفاء الموحدين من 1121 إلى 1269م، تظهر عليه مواضع المخطوطات الخمس">
+      <div class="band pre" style="--r:0.667%;--w:6.4%" title="دعوة المهدي ابن تومرت 515–524هـ / 1121–1130م"><span class="rn up">المهدي</span></div>
+      <div class="band" style="--r:7.067%;--w:21.866%" title="عبد المؤمن بن علي 524–558هـ / 1130–1163م"><span class="rn up">عبد المؤمن</span></div>
+      <div class="band" style="--r:28.933%;--w:14.1%" title="أبو يعقوب يوسف 558–580هـ / 1163–1184م"><span class="rn up">أبو يعقوب يوسف</span></div>
+      <div class="band" style="--r:43.033%;--w:9.674%" title="أبو يوسف يعقوب المنصور 580–595هـ / 1184–1199م"><span class="rn up">المنصور</span></div>
+      <div class="band" style="--r:52.707%;--w:9.926%" title="محمد الناصر 595–610هـ / 1199–1213م"><span class="rn up">الناصر</span></div>
+      <div class="band" style="--r:62.633%;--w:6.734%" title="يوسف المستنصر 610–620هـ / 1213–1224م"><span class="rn up">المستنصر</span></div>
+      <div class="band" style="--r:69.367%;--w:2.473%" title="عبد الواحد ثم عبد الله العادل 621–624هـ / 1224–1227م"></div>
+      <div class="band" style="--r:71.84%;--w:3.36%" title="إدريس المأمون 624–629هـ / 1227–1232م"><span class="rn down">العادل ثم المأمون</span></div>
+      <div class="band" style="--r:75.2%;--w:6.767%" title="عبد الواحد الرشيد 630–640هـ / 1232–1242م"><span class="rn up">الرشيد</span></div>
+      <div class="band" style="--r:81.967%;--w:3.666%" title="علي السعيد 640–646هـ / 1242–1248م"><span class="rn down">السعيد</span></div>
+      <div class="band" style="--r:85.633%;--w:12.234%" title="عمر المرتضى 646–665هـ / 1248–1266م"><span class="rn up">المرتضى</span></div>
+      <div class="band" style="--r:97.867%;--w:1.933%" title="إدريس أبو دبوس 665–668هـ / 1266–1269م"><span class="rn down edge-l">أبو دبوس</span></div>
+
+      <span class="lead" style="--x:31.067%"></span>
+      <span class="lead" style="--x:42.6%"></span>
+      <a class="mk" href="#m1" style="--x:31.067%"><span class="sq">1</span><span class="d num">562هـ</span></a>
+      <a class="mk" href="#m2" style="--x:42.6%"><span class="sq">2</span><span class="d num">579هـ</span></a>
+      <a class="mk" href="#m4" style="--x:70.567%"><span class="sq">4</span><span class="d num">622هـ</span></a>
+      <a class="rg" href="#m3" style="--r:53.333%;--w:22%;--y:196px" aria-label="المخطوط 3"><span class="sq">3</span><span class="d">الثلث الأول من القرن 13م</span></a>
+      <a class="rg" href="#m5" style="--r:70%;--w:16.667%;--y:246px" aria-label="المخطوط 5"><span class="sq">5</span></a>
+      <span class="endow" style="--x:88.2%;--y:240px"><i></i><span class="num">وقف 650هـ</span></span>
+
+      <div class="axis"></div>
+      <span class="tk" style="--x:3.333%"><b class="num">1125م</b><span class="num">≈ 519هـ</span></span>
+      <span class="tk" style="--x:20%"><b class="num">1150م</b><span class="num">≈ 545هـ</span></span>
+      <span class="tk" style="--x:36.667%"><b class="num">1175م</b><span class="num">≈ 570هـ</span></span>
+      <span class="tk" style="--x:53.333%"><b class="num">1200م</b><span class="num">≈ 596هـ</span></span>
+      <span class="tk" style="--x:70%"><b class="num">1225م</b><span class="num">≈ 622هـ</span></span>
+      <span class="tk" style="--x:86.667%"><b class="num">1250م</b><span class="num">≈ 648هـ</span></span>
+    </div>
+  </div>
+  <ol class="legend">
+    <li><span class="sq">1</span><span><a href="#m1">كتاب سيبويه بخط ابن خروف</a> <span class="meta num">· 562هـ/1166م · عهد أبي يعقوب يوسف</span></span></li>
+    <li><span class="sq">2</span><span><a href="#m2">كتاب ابن تومرت «أعز ما يُطلب»</a> <span class="meta num">· شعبان 579هـ/1183م · عهد أبي يعقوب يوسف</span></span></li>
+    <li><span class="sq">3</span><span><a href="#m3">حديث بياض ورياض</a> <span class="meta num">· نحو 1200–1233م · عهدا الناصر والمستنصر</span></span></li>
+    <li><span class="sq">4</span><span><a href="#m4">شرح المقدمة الجزولية للشلوبين</a> <span class="meta num">· ذو القعدة 622هـ/1225م · عهد العادل</span></span></li>
+    <li><span class="sq">5</span><span><a href="#m5">المصحف الوردي</a> <span class="meta num">· نحو 1225–1250م · وقفه المرتضى في صفر 650هـ/1252م</span></span></li>
+  </ol>
+</section>
+
+<section aria-labelledby="h-spec">
+  <div class="sec-head">
+    <h2 id="h-spec">مسطرة الخطوط</h2>
+    <p>خمسة أساليب من الخط المغربي والأندلسي في القرنين السادس والسابع الهجريين، مقتطعة من صفحات المخطوطات نفسها.</p>
+  </div>
+  <div class="specs">
+    <div class="spec">
+      <div><h3>الخط الأندلسي العلمي</h3><p>خط العلماء المتصل الدقيق، يكتب به الطالب نسخته لنفسه. عنوان نسخة ابن خروف: «سِفرٌ فيه جميع كتاب أبي بشر عمرو بن عثمان بن قنبر البصري المعروف بسيبويه»، إشبيلية 562هـ.</p></div>
+      <a class="img" href="#m1"><img src="assets/m1_spec.jpg" alt="عنوان كتاب سيبويه بالخط الأندلسي" loading="lazy"></a>
+    </div>
+    <div class="spec">
+      <div><h3>الثلث المغربي المذهّب</h3><p>خط العناوين الرسمي في الكتاب الموحدي: حروف مستديرة جليلة بالذهب، محددة بالمداد، في إطار مذهّب. عنوان «أعز ما يُطلب وأفضل ما يُكتسب»، 579هـ.</p></div>
+      <a class="img" href="#m2"><img src="assets/m2_spec.jpg" alt="عنوان أعز ما يطلب بالثلث المغربي المذهب" loading="lazy"></a>
+    </div>
+    <div class="spec">
+      <div><h3>المبسوط الأندلسي</h3><p>خط الكتب المستدير الواضح، مضبوط بالشكل، تفتتح فقراته كلمات بالحمرة. من «حديث بياض ورياض»، الورقة 10و.</p></div>
+      <a class="img" href="#m3"><img src="assets/m3_spec.jpg" alt="أسطر من حديث بياض ورياض" loading="lazy"></a>
+    </div>
+    <div class="spec">
+      <div><h3>خط الإجازة</h3><p>يد العالم نفسه وهو يصحّح قيد السماع: «المكتوب فوق هذا صحيح، وكتب عمر بن محمد…»، أي الشلوبين، إشبيلية 622هـ.</p></div>
+      <a class="img" href="#m4"><img src="assets/m4_spec.jpg" alt="تصحيح بخط الشلوبين" loading="lazy"></a>
+    </div>
+    <div class="spec">
+      <div><h3>المبسوط القرآني الجليل</h3><p>خمسة أسطر في الصفحة بمداد عريض، والحركات بالذهب محددة بالمداد، والشدّات بالأزرق، على ورق مصبوغ بالوردي. المصحف الوردي، مراكش.</p></div>
+      <a class="img" href="#m5"><img src="assets/m5_spec.jpg" alt="كلمات من المصحف الوردي بالخط المبسوط الجليل" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="cat" aria-label="بطاقات المخطوطات">
+
+<article class="ms" id="m1">
+  <div class="ms-head">
+    <div>
+      <p class="ms-no">المخطوط 1 من 5</p>
+      <h2>كتاب سيبويه بخط ابن خروف</h2>
+      <p class="ms-sub">«الكتاب» لسيبويه في نسخة النحوي الإشبيلي أبي الحسن ابن خروف، كتبها لنفسه وقابلها بالأصل.</p>
+    </div>
+    <div class="stamp" aria-label="التاريخ"><b class="num">562هـ</b><span class="num">1166–1167م</span></div>
+  </div>
+  <div class="ms-body">
+    <div class="ms-text">
+      <dl class="card">
+        <dt>المكتبة</dt><dd>المكتبة الوطنية الفرنسية، باريس</dd>
+        <dt>رقم الحفظ</dt><dd><bdi>Arabe 6499</bdi></dd>
+        <dt>التاريخ</dt><dd>562هـ / 1166–1167م</dd>
+        <dt>مكان النسخ</dt><dd>إشبيلية على الأرجح (حرد المتن، الورقة 164ظ)</dd>
+        <dt>الخط</dt><dd>أندلسي علمي دقيق، والعنوان بخط أندلسي جليل</dd>
+        <dt>الحامل</dt><dd>كراريس ورق تتخللها أوراق من الرَّق</dd>
+        <dt>الأوراق والمقاس</dt><dd>165 ورقة · 23 × 16.9 سم</dd>
+        <dt>النسخة الرقمية</dt><dd>ملونة كاملة، 343 صورة</dd>
+      </dl>
+      <div class="blk"><h3>المخطوط</h3><p>نسخة شبه كاملة من «الكتاب» كتبها ابن خروف بيده لاستعماله الخاص، ثم قابلها بأصلها، وفي آخرها بخط جليل: «انتهت المعارضة بالأصل». تزدحم صفحة العنوان وهوامشها بقيود وتعليقات لاحقة، واضطرب ترتيب بعض الكراريس عند التجليد، وفيها خروم يسيرة.</p></div>
+      <div class="blk"><h3>المؤلف والناسخ</h3><p>سيبويه، أبو بشر عمرو بن عثمان بن قنبر (ت. نحو 180هـ/796م)، إمام نحاة البصرة، وكتابه أول مصنَّف جامع في نحو العربية، حتى سمّاه النحاة «قرآن النحو». وكان يُقرأ في الأندلس بالرواية والإسناد كما تُقرأ كتب الحديث.</p><p>أما الناسخ فأبو الحسن علي بن محمد بن خروف الإشبيلي (ت. 609هـ/1212م)، من أعلام النحو في إشبيلية، أخذ عن ابن طاهر الخِدَبّ، وشرح الكتاب في «تنقيح الألباب في شرح غوامض الكتاب»، وشرح «جُمل» الزجاجي.</p></div>
+      <div class="blk"><h3>قصة النسخة</h3><p>دخلت المكتبة الوطنية الفرنسية سنة 1910، ودرستها جنفييف أومبير في بحثها عن طرق رواية كتاب سيبويه (لايدن 1995)، وعُرضت في معرض «فن الكتاب العربي» بباريس سنة 2001.</p></div>
+      <div class="blk"><h3>الأهمية</h3><p>قليلاً ما تصلنا نسخة من القرن السادس الهجري بخط عالم كبير. هذه شاهد مباشر على ورشة النحو الأندلسي: نص يُنسخ ويُقابل ويُصحَّح بيد رجل سيكتب عليه شرحاً بعد ذلك. وقد كُتبت في السنة التي يُذكر أن الشلوبين وُلد فيها، وهو وارث مدرسة إشبيلية وصاحب المخطوط الرابع في هذا الفهرس.</p></div>
+      <aside class="caliph">
+        <p class="k">كُتب في عهد الخليفة</p>
+        <p class="name">أبو يعقوب يوسف بن عبد المؤمن</p>
+        <p class="reign num">558–580هـ / 1163–1184م</p>
+        <p>ثاني خلفاء الموحدين. ولي إشبيلية قبل الخلافة، واتخذها مقراً سنة 1171م، فأمر ببناء جامعها الكبير الذي بقيت منه مئذنته المعروفة اليوم بالخيرالدا، وبنى قصر البحيرة. كان مولعاً بالفلسفة، قرّب ابن طفيل، وبتقديمه كلّف ابن رشد بشرح كتب أرسطو. جُرح في حصار شنترين، وتوفي سنة 580هـ/1184م، ودُفن في تينمل.</p>
+      </aside>
+      <p class="go"><a href="https://gallica.bnf.fr/ark:/12148/btv1b84061824" target="_blank" rel="noopener">تصفّح المخطوط كاملاً ↗</a></p>
+    </div>
+    <figure class="ms-fig">
+      <a href="https://gallica.bnf.fr/ark:/12148/btv1b84061824/f5.item" target="_blank" rel="noopener"><img src="assets/m1_cover.jpg" alt="صفحة العنوان في نسخة ابن خروف من كتاب سيبويه" loading="lazy"></a>
+      <figcaption>الورقة 1و: صفحة العنوان، وعليها اسم ابن خروف. المصدر: gallica.bnf.fr / المكتبة الوطنية الفرنسية</figcaption>
+      <a href="https://gallica.bnf.fr/ark:/12148/btv1b84061824/f5.item" target="_blank" rel="noopener"><img src="assets/m1_detail.jpg" alt="خاتمة المقابلة في آخر النسخة" loading="lazy"></a>
+      <figcaption>الورقة 164ظ: «انتهت المعارضة بالأصل»، ثم حرد المتن.</figcaption>
+    </figure>
+  </div>
+</article>
+
+<article class="ms" id="m2">
+  <div class="ms-head">
+    <div>
+      <p class="ms-no">المخطوط 2 من 5</p>
+      <h2>كتاب ابن تومرت «أعز ما يُطلب»</h2>
+      <p class="ms-sub">مجموع تعاليق المهدي محمد بن تومرت، مؤسس الدعوة الموحدية، في نسخة رسمية مذهّبة.</p>
+    </div>
+    <div class="stamp" aria-label="التاريخ"><b class="num">579هـ</b><span class="num">1183م</span></div>
+  </div>
+  <div class="ms-body">
+    <div class="ms-text">
+      <dl class="card">
+        <dt>المكتبة</dt><dd>المكتبة الوطنية الفرنسية، باريس</dd>
+        <dt>رقم الحفظ</dt><dd><bdi>Arabe 1451</bdi></dd>
+        <dt>التاريخ</dt><dd>شعبان 579هـ / نوفمبر–ديسمبر 1183م (الورقة 98)</dd>
+        <dt>مكان النسخ</dt><dd>غير مذكور</dd>
+        <dt>الخط</dt><dd>مبسوط مغربي مضبوط بالشكل، والطرّة والعنوان بالثلث المغربي المذهّب</dd>
+        <dt>الحامل</dt><dd>ورق · تجليد بجلد أحمر ذي لسان</dd>
+        <dt>الأوراق والمقاس</dt><dd>98 ورقة · 21.5 × 17.5 سم · 27–29 سطراً</dd>
+        <dt>النسخة الرقمية</dt><dd>ملونة كاملة، 205 صور</dd>
+      </dl>
+      <div class="blk"><h3>المخطوط</h3><p>يفتتح المجموعَ طرّةٌ مكتوبة بالذهب تسرد عناوين ما فيه، وتنص على أنه «جمع تعاليق الإمام المعصوم المهدي المعلوم… مما أملاه سيدنا الإمام الخليفة أمير المؤمنين أبو محمد عبد المؤمن بن علي». يليها عنوان «أعز ما يُطلب» في إطار مذهّب، ثم عشرون رسالة في التوحيد وأصول الدين والصلاة والحديث، منها باب في «طوائف المبطلين من الملثمين والمجسمين» يقصد به المرابطين، ويُختم بكتاب الجهاد.</p></div>
+      <div class="blk"><h3>المؤلف</h3><p>محمد بن عبد الله بن تومرت (ت. 524هـ/1130م)، من قبيلة هرغة المصمودية بسوس. رحل إلى المشرق في طلب العلم، ثم عاد يدعو إلى التوحيد وينكر على المرابطين، وبويع «مهدياً» سنة 515هـ/1121م، وجعل تينمل في الأطلس الكبير مركز دعوته. وخلفه تلميذه عبد المؤمن بن علي فأقام الدولة.</p></div>
+      <div class="blk"><h3>قصة النسخة</h3><p>اقتنتها المكتبة الملكية بباريس سنة 1835 من غايانغوس، والأرجح أنه المستعرب الإسباني باسكوال دي غايانغوس. وعليها اعتمدت نشرة لوسياني للكتاب (الجزائر 1903) بتقديم غولدتسيهر. وعُرضت في معرض «المغرب الوسيط» بمتحف اللوفر (2014–2015).</p></div>
+      <div class="blk"><h3>الأهمية</h3><p>هو النص المؤسس لعقيدة الموحدين وأوفى ما بقي من تعاليم المهدي، في نسخة فاخرة كُتبت بعد نحو خمسين سنة من وفاته. وتُظهر صفحتاه الأوليان الأسلوب الرسمي للكتاب في الدولة: الثلث المغربي بالذهب، والمتن المبسوط المشكول، والعناوين الكبيرة الملونة، والزخارف الذهبية في الهوامش.</p></div>
+      <aside class="caliph">
+        <p class="k">كُتب في عهد الخليفة</p>
+        <p class="name">أبو يعقوب يوسف بن عبد المؤمن</p>
+        <p class="reign num">558–580هـ / 1163–1184م</p>
+        <p>نُسخ الكتاب في السنة الأخيرة من حكمه، وهو يعدّ لحملة شنترين التي جُرح فيها ومات. وفي عهده اتسعت الدولة التي قامت على هذه التعاليم من الأندلس إلى إفريقية، وكانت تعاليم المهدي تُدرَّس لطبقة «الطلبة» و«الحفّاظ» الذين أعدّتهم الدولة لخدمتها. أما عبد المؤمن المذكور في الطرّة فهو أبوه، مؤسس الخلافة الموحدية.</p>
+      </aside>
+      <p class="go"><a href="https://gallica.bnf.fr/ark:/12148/btv1b8419211m" target="_blank" rel="noopener">تصفّح المخطوط كاملاً ↗</a></p>
+    </div>
+    <figure class="ms-fig">
+      <a href="https://gallica.bnf.fr/ark:/12148/btv1b8419211m/f6.item" target="_blank" rel="noopener"><img src="assets/m2_cover.jpg" alt="الصفحة الأولى من أعز ما يطلب بعنوان مذهب" loading="lazy"></a>
+      <figcaption>الورقة 1ظ: العنوان في إطار مذهّب، والمتن بعناوين ملونة وزخارف ذهبية في الهامش. المصدر: gallica.bnf.fr / المكتبة الوطنية الفرنسية</figcaption>
+      <a href="https://gallica.bnf.fr/ark:/12148/btv1b8419211m/f6.item" target="_blank" rel="noopener"><img src="assets/m2_detail.jpg" alt="الطرة المذهبة التي تسرد محتويات المجموع" loading="lazy"></a>
+      <figcaption>الورقة 1و: الطرّة المكتوبة بالذهب، وفيها اسم الخليفة عبد المؤمن بن علي.</figcaption>
+    </figure>
+  </div>
+</article>
+
+<article class="ms" id="m3">
+  <div class="ms-head">
+    <div>
+      <p class="ms-no">المخطوط 3 من 5</p>
+      <h2>حديث بياض ورياض</h2>
+      <p class="ms-sub">قصة حب أندلسية بالنثر والشعر، والمخطوط المصوَّر الوحيد الذي وصلنا من الأندلس.</p>
+    </div>
+    <div class="stamp" aria-label="التاريخ"><b>ق 7هـ</b><span class="num">نحو 1200–1233م</span></div>
+  </div>
+  <div class="ms-body">
+    <div class="ms-text">
+      <dl class="card">
+        <dt>المكتبة</dt><dd>مكتبة الفاتيكان الرسولية، روما</dd>
+        <dt>رقم الحفظ</dt><dd><bdi>Vat. ar. 368</bdi></dd>
+        <dt>التاريخ</dt><dd>الثلث الأول من القرن 13م (أواخر ق 6 وأوائل ق 7هـ)، تأريخاً بالأسلوب</dd>
+        <dt>مكان النسخ</dt><dd>الأندلس، وإشبيلية أرجح</dd>
+        <dt>الخط</dt><dd>مبسوط أندلسي مضبوط، ورؤوس الفقر بالحمرة</dd>
+        <dt>الحامل</dt><dd>ورق · ناقص الأول والآخر</dd>
+        <dt>الأوراق</dt><dd>نحو 30 ورقة، فيها نحو أربع عشرة صورة ملونة</dd>
+        <dt>النسخة الرقمية</dt><dd>ملونة كاملة، 43 صورة لصفحات متقابلة</dd>
+      </dl>
+      <div class="blk"><h3>المخطوط</h3><p>يروي هيام بياض، ابن تاجر دمشقي غريب عن البلد، برياض، الجارية المتأدبة في دار حاجب لم يُسمَّ، وتتوسط بينهما «السيدة» وعجوز تحمل الرسائل. تتخلل النص صور ملونة لمجالس الغناء في البساتين، والقصور ذات الأبراج والشبابيك المشبّكة، والناعورة على ضفة النهر، وقد دُوِّن فوق بعضها وصفٌ للمشهد.</p></div>
+      <div class="blk"><h3>المؤلف</h3><p>مجهول. وهذه النسخة المصوَّرة هي الأشهر، وتُذكر للنص نسختان أخريان غير مصوَّرتين في دبلن وباريس.</p></div>
+      <div class="blk"><h3>قصة النسخة</h3><p>لا يُعرف ماضيها الأول. في أوراقها آثار تدل على مرورها بأيدي تجار إيطاليين في القرن 15م، ويُرجَّح أنها حُملت إلى روما مع مخطوطات غُنمت من تونس سنة 1535م. نشر نصّها أ. ر. نيكل سنة 1941، ودرستها سينثيا روبنسون في كتابها عن ثقافة البلاط الأندلسي (2007).</p></div>
+      <div class="blk"><h3>الأهمية</h3><p>هو الناجي الوحيد من تقليد كامل من الكتب المصوَّرة في الأندلس. صوره بأسلوب مستقل عن مدرسة بغداد، وبألوان هادئة تذكّر بالمنسوجات الأندلسية، وعمارتها تطابق إشبيلية الموحدية، فهو وثيقة نادرة عن حياة الخاصة: البستان والغناء والعود والشعر.</p></div>
+      <aside class="caliph">
+        <p class="k">كُتب في عهد الخليفتين</p>
+        <p class="name">محمد الناصر ثم يوسف المستنصر</p>
+        <p class="reign num">595–610هـ / 1199–1213م · 610–620هـ / 1213–1224م</p>
+        <p>يؤرَّخ المخطوط بأسلوبه إلى الثلث الأول من القرن 13م. ورث الناصر دولة في أوجها بعد نصر الأرك الذي أحرزه أبوه المنصور سنة 591هـ/1195م، ثم هُزم في العُقاب سنة 609هـ/1212م فبدأ انحسار الموحدين في الأندلس. وخلفه ابنه المستنصر صبياً فترك تدبير الأمر لكبار رجال الدولة. وبقيت إشبيلية في عهدهما عاصمة الأندلس الموحدية ومركز ترفها.</p>
+      </aside>
+      <p class="go"><a href="https://digi.vatlib.it/view/MSS_Vat.ar.368" target="_blank" rel="noopener">تصفّح المخطوط كاملاً ↗</a></p>
+    </div>
+    <figure class="ms-fig">
+      <a href="https://digi.vatlib.it/view/MSS_Vat.ar.368" target="_blank" rel="noopener"><img src="assets/m3_cover.jpg" alt="بياض يعزف على العود أمام السيدة وجواريها في البستان" loading="lazy"></a>
+      <figcaption>الورقة 10و: بياض يغني على العود في مجلس السيدة وجواريها. © مكتبة الفاتيكان الرسولية</figcaption>
+      <a href="https://digi.vatlib.it/view/MSS_Vat.ar.368" target="_blank" rel="noopener"><img src="assets/m3_detail.jpg" alt="بياض مغشياً عليه قرب الناعورة والعجوز واقفة" loading="lazy"></a>
+      <figcaption>الورقة 19و: بياض مغشياً عليه على شاطئ النهر قرب الناعورة، والعجوز إلى جانبه.</figcaption>
+    </figure>
+  </div>
+</article>
+
+<article class="ms" id="m4">
+  <div class="ms-head">
+    <div>
+      <p class="ms-no">المخطوط 4 من 5</p>
+      <h2>شرح المقدمة الجزولية للشلوبين</h2>
+      <p class="ms-sub">شرح إمام النحو في إشبيلية على متن ألّفه نحوي من سوس درّس بمراكش، وعليه تصحيح بخط الشارح.</p>
+    </div>
+    <div class="stamp" aria-label="التاريخ"><b class="num">622هـ</b><span class="num">1225م</span></div>
+  </div>
+  <div class="ms-body">
+    <div class="ms-text">
+      <dl class="card">
+        <dt>المكتبة</dt><dd>المكتبة الملكية بدير الإسكوريال، قرب مدريد</dd>
+        <dt>رقم الحفظ</dt><dd><bdi>Árabe 36</bdi></dd>
+        <dt>التاريخ</dt><dd>ذو القعدة 622هـ / نوفمبر 1225م (تاريخ قيد السماع)</dd>
+        <dt>مكان النسخ</dt><dd>إشبيلية</dd>
+        <dt>الخط</dt><dd>أندلسي، وعليه تصحيح بخط الشلوبين</dd>
+        <dt>الحامل</dt><dd>ورق</dd>
+        <dt>الأوراق</dt><dd>103 أوراق</dd>
+        <dt>النسخة الرقمية</dt><dd>ملونة كاملة، 218 صورة</dd>
+      </dl>
+      <div class="blk"><h3>المخطوط</h3><p>في آخر النسخة قيد سماع كُتب بإشبيلية في ذي القعدة 622هـ، يثبت أن كاتبه سمع الشرح من مؤلفه «الشيخ الأستاذ… أبي علي عمر بن محمد بن عمر بن عبد الله الأزدي»، وأن المؤلف ناوله بقيته وأجاز له روايته وسائر مروياته. وتحته سطران بخط الشلوبين نفسه: «المكتوب فوق هذا صحيح، وكتب عمر بن محمد…».</p></div>
+      <div class="blk"><h3>المؤلف والمتن</h3><p>أبو علي عمر بن محمد الأزدي الإشبيلي، المعروف بالشلوبين (562–645هـ / 1166–1247م)، «رئيس النحويين بالأندلس». أقرأ النحو في إشبيلية نحو ستين سنة حتى قيل إنه قلّما تأدّب أحد بالأندلس إلا قرأ عليه، وأخذ عن السهيلي وابن بشكوال، ومن تلاميذه ابن عصفور وابن الأبّار. توفي بإشبيلية قُبيل سقوطها في يد قشتالة سنة 646هـ/1248م.</p><p>و«المقدمة الجزولية» (وتسمى «القانون») لأبي موسى عيسى بن عبد العزيز الجزولي (ت. 607هـ/1210م)، من جزولة بسوس، أخذ بمصر عن ابن بري، ثم تصدّر للإقراء بمراكش عاصمة الموحدين فازدحم الطلبة على درسه. وهي متن مكثف عسير تسابق النحاة إلى شرحه.</p></div>
+      <div class="blk"><h3>قصة النسخة</h3><p>معظم المخطوطات العربية في الإسكوريال بقية من خزانة السلطان السعدي زيدان التي استولى عليها الإسبان في البحر سنة 1612م، فلعل هذه النسخة الإشبيلية عاشت زمناً في المغرب قبل أن تستقر هناك. رقمنتها المكتبة ضمن مخطوطاتها العربية من 1 إلى 115.</p></div>
+      <div class="blk"><h3>الأهمية</h3><p>تجمع النسخة طرفي العلم في الدولة الموحدية: متناً ألّفه نحوي مصمودي في مراكش، وشرحاً لإمام النحو في إشبيلية، وسماعاً موثقاً بخط الشارح. وتاريخها يشهد أن حلقات الدرس لم تنقطع في إشبيلية في سنوات عصيبة.</p></div>
+      <aside class="caliph">
+        <p class="k">كُتب في عهد الخليفة</p>
+        <p class="name">أبو محمد عبد الله العادل</p>
+        <p class="reign num">621–624هـ / 1224–1227م</p>
+        <p>ابن المنصور وأخو الناصر. كان والياً على مرسية فبويع فيها بعد وفاة المستنصر، ونازعه الأمر شيوخ الموحدين بمراكش، ثم السيد عبد الله البيّاسي الذي حالف فرناندو الثالث ملك قشتالة. وفي أيامه أغار البرتغاليون على نواحي إشبيلية وقُتل من أهلها خلق كثير. انتهى حكمه بمقتله غرقاً في قصره بمراكش سنة 624هـ/1227م، وتسارع بعده تفكك الدولة في الأندلس.</p>
+      </aside>
+      <p class="go"><a href="https://rbme.patrimonionacional.es/s/rbme/item/14911" target="_blank" rel="noopener">تصفّح المخطوط كاملاً ↗</a></p>
+    </div>
+    <figure class="ms-fig">
+      <a href="https://rbme.patrimonionacional.es/s/rbme/item/14911" target="_blank" rel="noopener"><img src="assets/m4_cover.jpg" alt="صفحة من شرح المقدمة الجزولية بالخط الأندلسي" loading="lazy"></a>
+      <figcaption>صفحة من الشرح: «وقوله» بخط أعرض في رأس كل مسألة. © Patrimonio Nacional، المكتبة الملكية بدير الإسكوريال</figcaption>
+      <a href="https://rbme.patrimonionacional.es/s/rbme/item/14911" target="_blank" rel="noopener"><img src="assets/m4_detail.jpg" alt="قيد السماع بإشبيلية وتصحيح الشلوبين بخطه" loading="lazy"></a>
+      <figcaption>قيد السماع بإشبيلية سنة 622هـ، وتحته تصحيح الشلوبين بخطه.</figcaption>
+    </figure>
+  </div>
+</article>
+
+<article class="ms" id="m5">
+  <div class="ms-head">
+    <div>
+      <p class="ms-no">المخطوط 5 من 5</p>
+      <h2>المصحف الوردي</h2>
+      <p class="ms-sub">مصحف ملكي في عشرة أجزاء، على ورق مصبوغ بالوردي، تفرقت أوراقه بين متاحف العالم.</p>
+    </div>
+    <div class="stamp" aria-label="التاريخ"><b>ق 7هـ</b><span class="num">نحو 1225–1250م</span></div>
+  </div>
+  <div class="ms-body">
+    <div class="ms-text">
+      <dl class="card">
+        <dt>المكتبة</dt><dd>أوراق في متحف غيتي بلوس أنجلوس ومتحف المتروبوليتان بنيويورك، وبقية الأجزاء في خزانة ابن يوسف بمراكش</dd>
+        <dt>رقم الحفظ</dt><dd><bdi>Getty Ms. 122</bdi> · <bdi>Met 2017.232</bdi> · <bdi>Ibn Yusuf ms. 431</bdi></dd>
+        <dt>التاريخ</dt><dd>الربع الثاني من القرن 13م (نحو 622–648هـ)، ووقفه المرتضى في صفر 650هـ / 1252م</dd>
+        <dt>مكان النسخ</dt><dd>مراكش على الأرجح، وكان يُنسب قديماً إلى شاطبة</dd>
+        <dt>الخط</dt><dd>مبسوط قرآني جليل، وعناوين السور بالكوفي المذهّب</dd>
+        <dt>الحامل</dt><dd>ورق مصبوغ بالوردي، مع الذهب والفضة والألوان</dd>
+        <dt>المقاس</dt><dd>الورقة نحو 32 × 25 سم، خمسة أسطر في الصفحة</dd>
+        <dt>النسخة الرقمية</dt><dd>7 صور حتى 10542 بكسل، ملك عام</dd>
+      </dl>
+      <div class="blk"><h3>المخطوط</h3><p>مصحف في عشرة أجزاء، في كل صفحة خمسة أسطر لا تتجاوز نحو عشرين كلمة، بمداد أسود عريض على ورق مصبوغ بالوردي، وحركاته بالذهب. تحمل ورقتا غيتي خاتمة سورة المؤمنون ثم عنوان سورة النور بالكوفي المذهّب في إطار مزخرف، وتحمل ورقتا المتروبوليتان الآيات 46–50 من سورة يونس.</p>
+        <ul class="dots" aria-label="مفتاح ألوان الضبط في المصاحف المغربية">
+          <li><i style="background:var(--vermilion)"></i>الحركات (بالأحمر عادةً، وبالذهب هنا)</li>
+          <li><i style="background:var(--lapis)"></i>الشدّة والسكون</li>
+          <li><i style="background:var(--hamza)"></i>همزة القطع</li>
+          <li><i style="background:var(--wasla)"></i>ألف الوصل</li>
+        </ul>
+      </div>
+      <div class="blk"><h3>الخطاط</h3><p>لم يُذكر اسمه. وتكشف أحدث دراسة للمصحف (بونجانينو وسيلار، 2025) أسلوبين متمايزين في الخط والتذهيب، ونظاماً بالغ الدقة في تجزئة النص وعدّ الآي.</p></div>
+      <div class="blk"><h3>قصة النسخة</h3><p>بقي في مراكش قروناً، وجُدِّد وقفه وترميمه في عهود المرينيين والسعديين والعلويين، وما زالت أجزاء منه في خزانة ابن يوسف. ثم بدأ تفرّقه: جزء كامل من 215 ورقة كان في مجموعة المارشال ليوطي بيع في باريس سنة 1975 ثم في لندن سنة 1976 وفُرِّق ورقاً، وتتابعت أوراق أجزاء أخرى في المزادات منذ 1998.</p></div>
+      <div class="blk"><h3>الأهمية</h3><p>من المصاحف المغربية القليلة التي اشتهرت باسمها، وورقه المصبوغ وذهبه وفضته تدل على رعاية ملكية. وقد أعادت الدراسة الجديدة نسبته من الأندلس إلى مراكش، فصار شاهداً على صناعة الكتاب في عاصمة الموحدين في عقودها الأخيرة.</p></div>
+      <aside class="caliph">
+        <p class="k">صلته الموثقة بالخليفة</p>
+        <p class="name">أبو حفص عمر المرتضى</p>
+        <p class="reign num">646–665هـ / 1248–1266م</p>
+        <p>كُتب المصحف على الأرجح في عهود أسلافه المأمون والرشيد والسعيد، أما صلته الموثقة فبالمرتضى: ففي صفر 650هـ، عقب هزيمته أمام المرينيين، وقفه على قبر إحدى زوجاته «أم ولدنا إسحاق». وكان المرتضى خطاطاً وجامع كتب، نسخ بيده مصحفاً في عشرة أجزاء ووقفه سنة 1258م على جامع علي بن يوسف بمراكش «لكافة المسلمين ليلاً ونهاراً»، ومن مصاحفه جزء في المكتبة البريطانية مؤرخ 654هـ/1256م. ووقف قبل ذلك مصحفاً إشبيلياً في عشرين جزءاً على قبر المهدي في تينمل سنة 649هـ.</p>
+      </aside>
+      <p class="go"><a href="https://www.getty.edu/art/collection/object/10A29K" target="_blank" rel="noopener">ورقتا متحف غيتي ↗</a><a href="https://www.metmuseum.org/art/collection/search/751641" target="_blank" rel="noopener">ورقتا المتروبوليتان ↗</a></p>
+    </div>
+    <figure class="ms-fig">
+      <a href="https://www.getty.edu/art/collection/object/10A29K" target="_blank" rel="noopener"><img src="assets/m5_cover.jpg" alt="ورقة من المصحف الوردي فيها عنوان سورة النور بالكوفي المذهب" loading="lazy"></a>
+      <figcaption>متحف غيتي <bdi>Ms. 122</bdi>: عنوان سورة النور بالكوفي المذهّب، ثم البسملة. ملك عام (CC0)</figcaption>
+      <a href="https://www.metmuseum.org/art/collection/search/751641" target="_blank" rel="noopener"><img src="assets/m5_detail.jpg" alt="ورقتان متقابلتان من المصحف الوردي" loading="lazy"></a>
+      <figcaption>متحف المتروبوليتان <bdi>2017.232</bdi>: سورة يونس، الآيات 46–50. ملك عام (CC0)</figcaption>
+    </figure>
+  </div>
+</article>
+
+</section>
+
+<footer class="foot">
+  <div>
+    
+    <h2>حقوق الصور</h2>
+    <p>صور المكتبة الوطنية الفرنسية ومتحفي المتروبوليتان وغيتي ملك عام. أما صور الفاتيكان (© مكتبة الفاتيكان الرسولية) وصور الإسكوريال (© Patrimonio Nacional) فمعروضة هنا مصغّرة للتعريف بالمخطوطات، منسوبة إلى مكتباتها، وتخضع نسخها الكاملة لشروط استعمال تلك المكتبات.</p>
+    <p>يُفتح كل مخطوط كاملاً بالنقر على صوره أو على زر «تصفّح المخطوط كاملاً».</p>
+  </div>
+  <div>
+    <h2>المراجع</h2>
+    <ul>
+      <li>بطاقتا المكتبة الوطنية الفرنسية: <a href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc33467g" target="_blank" rel="noopener">Arabe 6499</a> و<a href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc38685f" target="_blank" rel="noopener">Arabe 1451</a></li>
+      <li>U. Bongianino & É. Cellard, «<a href="https://doi.org/10.3366/jiaa.2025.0006" target="_blank" rel="noopener">The Pink Qurʾan: A Reverse Biography</a>», Journal of Islamic Art and Architecture 1 (2025)</li>
+      <li>U. Bongianino, «The Re-Endowment of Almohad Qurʾans under the Early Marinids», في Regime Change، لندن 2024، ص 48–63</li>
+      <li>C. Robinson, Medieval Andalusian Courtly Culture in the Mediterranean: Ḥadīth Bayāḍ wa Riyāḍ، 2007</li>
+      <li>G. Humbert, Les voies de la transmission du Kitāb de Sībawayhi، لايدن 1995</li>
+      <li>J. D. Luciani (نشر)، Le livre de Mohammed Ibn Toumert، الجزائر 1903</li>
+    </ul>
+  </div>
+</footer>
+
+</div>
+
+</html>
